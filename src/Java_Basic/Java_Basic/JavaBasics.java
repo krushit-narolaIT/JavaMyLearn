@@ -36,17 +36,17 @@ public class JavaBasics {
      * Demonstrates basic syntax with printing a greeting message.
      */
     public static void printGreeting() {
-        int num = 10; // Variable declaration and initialization.
-        String greeting = "Hello, World!"; // String object reference.
-        System.out.println(greeting); // Printing the string.
+        int num = 10;
+        String greeting = "Hello, World!";
+        System.out.println(greeting);
     }
 
     /**
      * Demonstrates data types, including primitive types and object references.
      */
     public static void demonstrateDataTypes() {
-        double price = 99.99; // Primitive type double.
-        boolean isAvailable = true; // Primitive type boolean.
+        double price = 99.99;
+        boolean isAvailable = true;
         System.out.println("Price: " + price + ", Available: " + isAvailable);
     }
 
@@ -55,9 +55,9 @@ public class JavaBasics {
      */
     public static void demonstrateOperators() {
         int a = 5, b = 3;
-        int sum = a + b; // Arithmetic operator
-        boolean isEqual = (a == b); // Relational operator
-        boolean result = (a > b) && (b > 0); // Logical operator (AND)
+        int sum = a + b;
+        boolean isEqual = (a == b);
+        boolean result = (a > b) && (b > 0);
         System.out.println("Sum: " + sum + ", Equal: " + isEqual + ", Result: " + result);
     }
 
@@ -121,7 +121,7 @@ public class JavaBasics {
      * Demonstrates array declaration, initialization, and printing elements.
      */
     public static void demonstrateArrays() {
-        int[] numbers = {1, 2, 3, 4, 5}; // Array initialization.
+        int[] numbers = {1, 2, 3, 4, 5};
         System.out.println("Array elements:");
         for (int numElement : numbers) {
             System.out.println(numElement);
@@ -132,13 +132,12 @@ public class JavaBasics {
      * Demonstrates type casting (both implicit and explicit).
      */
     public static void demonstrateTypeCasting() {
-        double x = 10.5; // double type
-        int y = (int) x; // Explicit type casting (double to int)
+        double x = 10.5;
+        int y = (int) x;
         System.out.println("Value of x: " + x + ", after casting to int: " + y);
 
-        // Implicit casting (widening)
         int smallValue = 5;
-        double largeValue = smallValue; // Implicit casting (int to double)
+        double largeValue = smallValue;
         System.out.println("Small value: " + smallValue + ", after implicit casting to double: " + largeValue);
     }
 }
