@@ -1,6 +1,6 @@
 package oop;
 
-public abstract class AbstractClassExample {
+public abstract class abstractClassExample {
 
     /*
      * Rule1: An abstract method cannot be static.
@@ -48,8 +48,8 @@ public abstract class AbstractClassExample {
     }
 
     public static void main(String[] args) {
-        System.out.println("Addition: " + AbstractClassExample.add(10, 15));
-        System.out.println("Subtraction: " + AbstractClassExample.subtract(20, 5));
+        System.out.println("Addition: " + abstractClassExample.add(10, 15));
+        System.out.println("Subtraction: " + abstractClassExample.subtract(20, 5));
 
         /*
          * Note: We cannot instantiate an abstract class directly.
@@ -62,7 +62,7 @@ public abstract class AbstractClassExample {
     }
 }
 
-class ConcreteExample extends AbstractClassExample {
+class ConcreteExample extends abstractClassExample {
     @Override
     int multiply(int a, int b) {
         return super.multiply(a, b);
